@@ -1,0 +1,29 @@
+.footer {
+  background: #030a1a;
+}
+
+.footer__wrapper {
+  padding: 40px 0;
+}
+
+.footer__nav-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 26px auto 30px;
+  gap: 20px 36px;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer__social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

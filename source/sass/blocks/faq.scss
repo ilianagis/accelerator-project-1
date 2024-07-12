@@ -1,0 +1,94 @@
+.faq {
+  background: $primary-bg;
+  padding: 70px 0;
+}
+
+.faq__header {
+  @include content-header;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+
+.faq__tabs {
+  @include list-reset;
+  padding: 0 0 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.faq__tabs-button {
+  color: #102654;
+  background: #ffffff;
+  border: 1px solid #10265433;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  width: 140px;
+  height: 46px;
+  padding: 13px 23px 15px 23px;
+}
+
+.faq__tabs-button--active {
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
+  border: none;
+}
+
+.faq__qna {
+  @include list-reset;
+}
+
+.faq__qna-item {
+  border-top: 1px solid #74819c;
+  padding: 20px 0;
+  position: relative;
+}
+
+.faq__qna-item:nth-child(3n),
+.faq__qna-item:nth-child(4n) {
+  padding: 20px 0 19px;
+}
+
+.faq__qna-item:last-child {
+  border-bottom: 1px solid #74819c;
+}
+
+.faq__qna-item::after {
+  position: absolute;
+  content: "";
+  background-image: url("/__spritemap#sprite-faq-plus-view");
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 0;
+}
+
+.faq__qna-item:nth-child(3n)::after ,
+.faq__qna-item:nth-child(4n)::after {
+  top: 34px;
+}
+
+.faq__qna-item--active::after {
+  background-image: url("/__spritemap#sprite-faq-minus-view");
+}
+
+.faq__qna-item button {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #102654;
+  padding: 0;
+  max-width: 236px;
+}
+
+.faq__answer--active {
+  margin: 19px 0 0;
+  font-weight: 300;
+  line-height: 20px;
+  width: 236px;
+}

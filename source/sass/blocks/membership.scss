@@ -1,0 +1,113 @@
+.membership {
+  background: $primary-bg;
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+
+.membership__header {
+  @include content-header;
+  text-align: center;
+  margin: 0 auto 25px;
+  width: 220px;
+}
+
+.membership__nav-buttons {
+  position: relative;
+  height: 26px;
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 2px solid #78787833;
+  padding-bottom: 2px;
+}
+
+.membership__nav-button {
+  line-height: 16px;
+  background: transparent;
+  border: none;
+  color: #102654;
+  padding: 0;
+}
+
+.membership__nav-button--active {
+  border-bottom: 2px solid #d10a42;
+  padding-bottom: 23px;
+  padding-top: 5px;
+}
+
+.membership__cards-wrapper {
+  margin-top: 30px;
+}
+
+.membership__cards {
+  @include list-reset;
+  text-align: center;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.membership__card {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 42px;
+}
+
+.membership__card-title {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.membership__card-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+}
+
+.membership__card-price {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #103aae;
+  z-index: 1;
+  margin: 0;
+  padding: 66px 34px 18px 0;
+}
+
+.membership__card-price::after {
+  position: absolute;
+  content: "";
+  background: url("/__spritemap#sprite-ruble-view");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 55%;
+  right: 18%;
+  width: 24px;
+  height: 33px;
+}
+
+.membership__card-price--shadow {
+  position: absolute;
+  font-size: 80px;
+  line-height: 120px;
+  color: #E8E8E8;
+  opacity: 0.5;
+  top: 11%;
+  right: 11%;
+  z-index: -1;
+}
+
+.membership__card-link {
+  padding: 25px 42px 25px 42px;
+  border: 2px solid #102654;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-decoration: none;
+  align-content: center;
+  text-transform: uppercase;
+  color: #102654;
+}

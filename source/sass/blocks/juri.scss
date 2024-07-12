@@ -1,0 +1,46 @@
+.juri {
+  padding: 36px 0;
+}
+
+.juri__header {
+  @include content-header;
+  text-align: center;
+  margin: 0 auto 20px;
+  width: 220px;
+}
+
+.juri__button {
+  display: none;
+}
+
+.juri__slider {
+  overflow: hidden;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.juri__list {
+  @include list-reset;
+  position: relative;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.juri__item {
+  position: relative;
+}
+
+.juri__name {
+  position: absolute;
+  margin: 0;
+  bottom: 29px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  right: 65px;
+}
+
+.juri__info {
+  display: none;
+}

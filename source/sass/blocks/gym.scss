@@ -1,0 +1,41 @@
+.gym {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.gym__content {
+  padding: 40px 0 36px;
+}
+
+.gym__header {
+  @include content-header;
+  margin-bottom: 12px;
+}
+
+.gym__description {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.gym__about p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-top: 36px;
+}
+
+.gym__about p:not(:first-child) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.gym__content-picture {
+  margin-bottom: 32px;
+}

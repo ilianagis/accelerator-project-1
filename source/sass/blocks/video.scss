@@ -1,0 +1,15 @@
+.video {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  background: url("../../img/play-button.svg");
+  width: 72px;
+  height: 72px;
+  top: 28%;
+  left: 39%;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}

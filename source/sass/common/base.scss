@@ -1,0 +1,28 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.page {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #102654;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 290px;
+
+  @media (min-width: 768px) {
+    width: 678px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 1160px;
+  }
+}

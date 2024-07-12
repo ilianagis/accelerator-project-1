@@ -1,0 +1,74 @@
+.games__wrapper {
+  padding: 25px 0;
+}
+
+.games__info {
+  background: #ed0233;
+  color: #ffffff;
+  padding: 40px 41px 40px 40px;
+}
+
+.games__content {
+  display: flex;
+  gap: 37px;
+  margin-bottom: 15px;
+}
+
+.games__content-header {
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.games__info-header {
+  margin: 0;
+  font-weight: 300;
+  line-height: 20px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.games__date {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  gap: 4px;
+  padding-bottom: 5px;
+}
+
+.games__number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 1px;
+}
+
+.games__month-year {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.games__description {
+  margin: 0;
+  font-weight: 300;
+  line-height: 20px;
+  padding-right: 25px;
+  margin-bottom: 17px;
+}
+
+.games__apply-button {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 21px 40px 22px 40px;
+  border: 2px solid #ffffff;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
