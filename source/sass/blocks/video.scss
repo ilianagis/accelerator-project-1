@@ -1,15 +1,59 @@
 .video {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 320px;
+  height: 170px;
+
+  @media (min-width: 768px) {
+    bottom: 30px;
+    width: 270px;
+  }
+
+  @media (min-width: 1366px) {
+    bottom: 0;
+    left: -100px;
+    width: 360px;
+    height: 230px;
+  }
 }
 
 .video__button {
   position: absolute;
   background: url("../../img/play-button.svg");
+  background-repeat: no-repeat;
   width: 72px;
   height: 72px;
-  top: 28%;
-  left: 39%;
+  top: 49px;
+  left: 124px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    top: 49px;
+    left: 99px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    top: 64px;
+    left: 130px;
+  }
+}
+
+#video-placeholder iframe {
+  width: 320px;
+  height: 170px;
+
+  @media (min-width: 768px) {
+    width: 270px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 360px;
+    height: 230px;
+  }
 }

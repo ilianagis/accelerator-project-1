@@ -1,19 +1,60 @@
 .form {
   padding: 70px 0;
   background: #102654;
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 60px 103px;
+  }
 }
 
 .form__header {
   @include content-header;
   color: #ffffff;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    font-size: 54px;
+    line-height: 54px;
+    max-width: 440px;
+    text-align: center;
+  }
+
+  @media (min-width: 1366px) {
+    text-align: left;
+    max-width: 477px;
+    margin: 0 0 37px;
+  }
+}
+
+.form__container {
+  @media (min-width: 768px) {
+    width: 440px;
+  }
+
+  @media (min-width: 1366px) {
+    width: unset;
+  }
 }
 
 .form__user-info {
   display: flex;
   flex-direction: column;
   gap: 38px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  @media (min-width: 1366px) {
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
 }
 
 .form__input {
@@ -28,12 +69,19 @@
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #74819c;
+
+  @media (min-width: 768px) {
+    width: 205px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 223px;
+  }
 }
 
 .form__button {
   width: 290px;
-  height: 60px;
-  padding: 22px 106px 22px 106px;
+  padding: 22px 106px 22px;
   border: 2px solid #ffffff;
   background: transparent;
   color: #ffffff;
@@ -42,4 +90,14 @@
   font-weight: 700;
   line-height: 12px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 25px 106px 24px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 477px;
+    padding: 26px 106px 24px;
+  }
 }

@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.button:hover,
+.button:active {
+  color: #103aae;
+  background-color: #ffffff;
+}
+
+.button:focus {
+  color: #103aae;
+  border: 2px solid #000000;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.button:disabled {
+  border: 2px solid #ffffff;
+}

@@ -1,11 +1,36 @@
 .hero__wrapper {
   padding-top: 48px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1366px) {
+    padding: 32px 0 120px;
+    gap: 56px;
+  }
 }
 
 .hero__about {
   display: grid;
   grid-template-columns: 123px 1fr;
   grid-template-rows: auto auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 113px 185px;
+    padding: 32px 0 31px;
+    column-gap: 26px;
+  }
+
+  @media (min-width: 1366px) {
+    grid-template-columns: 115px 270px;
+    margin-left: 121px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
 }
 
 .hero__description {
@@ -16,13 +41,22 @@
   text-align: right;
   align-content: end;
   padding-bottom: 1px;
+
+  @media (min-width: 768px) {
+    line-height: 22px;
+    align-content: unset;
+    padding-top: 130px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-top: 177px;
+    padding-left: 28px;
+  }
 }
 
 .hero__group {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
 }
 
 .hero__group-city {
@@ -30,6 +64,20 @@
   line-height: 32px;
   text-align: right;
   padding-right: 2px;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 42px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 28px;
+  }
 }
 
 .hero__group-description {
@@ -40,18 +88,54 @@
   text-align: right;
   text-transform: uppercase;
   padding-left: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 2px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
 }
 
 .hero__button {
   grid-column: span 2;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 22px 64px 22px;
-  border: 2px solid #ffffff;
+  padding: 22px 35px 22px;
   margin-top: 47px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  text-align: center;
-  text-transform: uppercase;
+  width: 216px;
+
+  @media (min-width: 768px) {
+    grid-column: 2;
+    width: 111px;
+    margin-top: 41px;
+    padding: 12px 35px;
+  }
+
+  @media (min-width: 1366px) {
+    margin-top: 0;
+    width: 160px;
+    padding: 26px 53px 24px;
+    align-self: end;
+  }
+}
+
+.hero__content-picture {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 324px;
+    height: 390px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 500px;
+    height: 524px;
+  }
 }
