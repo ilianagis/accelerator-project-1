@@ -1,8 +1,10 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import { loadVideo } from './modules/about.js';
+import { loadVideo } from './modules/video.js';
+import { validateForm } from './modules/form.js';
+import './modules/faq.js';
+import './modules/faq-tabs.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-container', {
@@ -29,3 +31,4 @@ document.getElementById('play-button').addEventListener('click', () => {
   playButton.style.display = 'none';
   loadVideo('9TZXsZItgdw');
 });
+document.getElementById('free-lesson-form').addEventListener('submit', validateForm);

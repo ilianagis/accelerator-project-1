@@ -78,8 +78,9 @@
   line-height: 16px;
   background: transparent;
   border: none;
-  color: #102654;
+  color: #10265480;
   padding: 0;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -93,6 +94,7 @@
 }
 
 .membership__nav-button--active {
+  color: #102654;
   border-bottom: 2px solid #d10a42;
   padding-bottom: 23px;
   padding-top: 5px;
@@ -284,8 +286,69 @@
 }
 
 .membership__card:hover .membership__card-link,
-.membership__card:focus .membership__card-link {
+.membership__card:active .membership__card-link  {
   color: #ffffff;
   border-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%) 1;
-  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+.membership__card:focus .membership__card-link {
+  background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+  border: 2px solid #000000;
+  color: #ffffff;
+}
+
+.membership__card:active .membership__card-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.membership__nav-button:hover {
+  color: #102654B2;
+  border-bottom: 2px solid #787878;
+  padding-bottom: 23px;
+  padding-top: 5px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 24px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-bottom: 28px;
+    padding-top: 3px;
+  }
+}
+
+.membership__nav-button:focus {
+  color: #102654;
+  border-bottom: 2px solid #102654;
+  padding-bottom: 23px;
+  padding-top: 5px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 24px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-bottom: 29px;
+    padding-top: 2px;
+  }
+}
+
+.membership__nav-button:active {
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
+  padding-bottom: 23px;
+  padding-top: 5px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 24px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-bottom: 29px;
+    padding-top: 2px;
+  }
 }

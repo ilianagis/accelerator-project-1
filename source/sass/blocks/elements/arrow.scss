@@ -1,0 +1,37 @@
+.arrow {
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+.arrow:hover {
+  @media (min-width: 768px) {
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+}
+
+.arrow:focus {
+  @media (min-width: 768px) {
+    background: #e8e8e8;
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+}
+
+.arrow:active {
+  @media (min-width: 768px) {
+    background: #102654;
+    border-radius: 50%;
+  }
+}
+
+.arrow:disabled {
+  stroke: rgba(16, 38, 84, 0.3);
+}
+
+.arrow:active .arrow__path {
+  stroke: #ffffff;
+}

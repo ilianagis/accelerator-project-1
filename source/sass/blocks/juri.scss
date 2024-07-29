@@ -51,14 +51,27 @@
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 133px;
+    top: 128px;
     background: transparent;
     border: none;
+    left: -11px;
+  }
+
+  @media (min-width: 1366px) {
+    top: 123px;
+    left: -14px;
   }
 }
 
-.juri__button-next {
-  right: 0;
+.juri__button--next {
+  @media (min-width: 768px) {
+    left: unset;
+    right: -11px;
+  }
+
+  @media (min-width: 1366px) {
+    right: -16px;
+  }
 }
 
 .juri__slider {
@@ -108,4 +121,71 @@
 
 .juri__info {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  background: #102654e3;
+  box-shadow: 0px 0px 35px 0px #2a3b632b;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 46px 38px 53px;
+}
+
+.juri__info-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 9px;
+}
+
+.juri__info-sport {
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+.juri__info-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.juri__info-item {
+  position: relative;
+  padding-left: 28px;
+}
+
+.juri__info-item::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.juri__info-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+// hover, focus, active
+.juri__item:hover .juri__name {
+  display: none;
+}
+
+.juri__item:hover .juri__info {
+  display: flex;
 }

@@ -34,7 +34,7 @@
 
   @media (min-width: 768px) {
     gap: 0;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1366px) {
@@ -78,6 +78,7 @@
   line-height: 20px;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 2px;
+  margin-bottom: 1px;
 
   @media (min-width: 768px) {
     font-size: 18px;
@@ -101,7 +102,7 @@
   @media (min-width: 768px) {
     gap: 6px;
     width: 74px;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: 1366px) {
@@ -115,7 +116,10 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-  padding-top: 1px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 1px;
+  }
 
   @media (min-width: 1366px) {
     font-size: 40px;
@@ -163,10 +167,10 @@
 
 .games__apply-button {
   width: 106px;
-  padding: 21px 50px;
+  padding: 22px 50px;
 
   @media (min-width: 768px) {
-    padding: 24px 55px;
+    padding: 25px 55px 25px;
   }
 
   @media (min-width: 1366px) {

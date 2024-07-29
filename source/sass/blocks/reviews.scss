@@ -20,14 +20,15 @@
   width: 240px;
   margin: 0 auto;
   padding-bottom: 40px;
+  display: flex;
 
   @media (min-width: 768px) {
     padding-bottom: 61px;
-    width: 678px;
+    width: 768px;
   }
 
   @media (min-width: 1366px) {
-    width: 768px;
+    width: 930px;
     padding-bottom: 100px;
   }
 }
@@ -36,6 +37,7 @@
   @media (min-width: 768px) {
     max-width: 500px;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   @media (min-width: 1366px) {
@@ -115,25 +117,36 @@
 
 .reviews__swiper-button {
   display: none;
+
   @media (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 105px;
+    top: 97px;
+    background: transparent;
+    border: none;
   }
 
   @media (min-width: 1366px) {
-    top: 112px;
+    top: 106px;
   }
 }
 
 .reviews__swiper-button--prev {
   @media (min-width: 768px) {
-    left: 0;
+    left: 28px;
+  }
+
+  @media (min-width: 1366px) {
+    left: 64px;
   }
 }
 
 .reviews__swiper-button--next {
   @media (min-width: 768px) {
-    right: 0;
+    right: 28px;
+  }
+
+  @media (min-width: 1366px) {
+    right: 64px;
   }
 }

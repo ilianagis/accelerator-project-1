@@ -1,8 +1,3 @@
-/* <div video container - video></div>
-<pic><img id thumbnail - thumbnail></img></pic>
-<button id play-btn - id play-button></button>
-<div id video-placeholder - id video-placeholder></div> */
-
 export function loadVideo(videoID) {
   const thumbnail = document.getElementById('video-thumbnail');
   thumbnail.style.display = 'block';

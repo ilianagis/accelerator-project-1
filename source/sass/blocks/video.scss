@@ -6,12 +6,12 @@
   height: 170px;
 
   @media (min-width: 768px) {
-    bottom: 30px;
+    bottom: 34px;
     width: 270px;
   }
 
   @media (min-width: 1366px) {
-    bottom: 0;
+    bottom: 4px;
     left: -100px;
     width: 360px;
     height: 230px;
@@ -20,8 +20,6 @@
 
 .video__button {
   position: absolute;
-  background: url("../../img/play-button.svg");
-  background-repeat: no-repeat;
   width: 72px;
   height: 72px;
   top: 49px;
@@ -29,6 +27,7 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  background: transparent;
 
   @media (min-width: 768px) {
     top: 49px;
@@ -44,6 +43,17 @@
   }
 }
 
+.video__button-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: 1366px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 #video-placeholder iframe {
   width: 320px;
   height: 170px;
@@ -56,4 +66,31 @@
     width: 360px;
     height: 230px;
   }
+}
+// hover, focus, active
+.video__button:hover .video__button-border {
+  stroke: #10265499;
+}
+
+.video__button:focus .video__button-border,
+.video__button:active .video__button-border {
+  stroke: #102654;
+}
+
+.video__button:hover .video__button-inner,
+.video__button:active .video__button-inner {
+  fill: #ffffff;
+}
+
+.video__button:focus .video__button-inner {
+  fill: #c8c9cc;
+}
+
+.video__button:hover .video__button-center {
+  fill: #10265499;
+}
+
+.video__button:focus .video__button-center,
+.video__button:active .video__button-center {
+  fill: #102654;
 }
